@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #007bff;
+  padding: 0 20px;
+}
+.main-navigation .company-name {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.main-navigation ul {
+  list-style: none;
+}
+.main-navigation ul li {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 6px;
+}
+.main-navigation ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+.main-navigation ul li:hover {
+  background-color: blue;
+  border-radius: 8px;
+}/*# sourceMappingURL=styles.css.map */
