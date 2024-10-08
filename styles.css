@@ -19,20 +19,59 @@ body {
   font-size: 2rem;
   color: #ffffff;
 }
-.main-navigation ul {
+.main-navigation .pages-navigation {
+  display: flex;
+}
+.main-navigation .pages-navigation .bars-container {
+  display: none;
+  align-items: center;
+  height: 120px;
+}
+.main-navigation .pages-navigation .bars-container .icon {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+.main-navigation .pages-navigation ul {
   list-style: none;
 }
-.main-navigation ul li {
+.main-navigation .pages-navigation ul li {
   display: inline-block;
   margin: 0 20px;
   padding: 6px;
 }
-.main-navigation ul li a {
+.main-navigation .pages-navigation ul li a {
   font-size: 1.2rem;
   text-decoration: none;
   color: #ffffff;
 }
-.main-navigation ul li:hover {
+.main-navigation .pages-navigation ul li:hover {
   background-color: blue;
   border-radius: 8px;
+}
+@media (max-width: 1100px) {
+  .main-navigation .pages-navigation .bars-container {
+    display: flex;
+  }
+  .main-navigation .pages-navigation ul {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: gray;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+  }
+  .main-navigation .pages-navigation ul li {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+  .main-navigation .pages-navigation ul:hover {
+    display: block;
+  }
+  .main-navigation .pages-navigation .bars-container:hover ~ ul {
+    display: block;
+  }
 }/*# sourceMappingURL=styles.css.map */
